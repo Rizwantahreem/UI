@@ -1,0 +1,42 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    /* width:auto; */
+    margin-top: 1pc;
+    font-size: 25px;
+    color: white;
+}
+
+.bold{
+    font-size: 49px;
+    margin-left: 4pc;
+}
+
+.A,  .B, .C{
+     padding: 2pc;
+     border-top-right-radius: 30px;
+     border-top-left-radius: 30px; 
+     padding-bottom: 1pc;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+
+.A{
+     background-image: linear-gradient(to right, rgb(255, 109, 145), LightCoral); 
+}
+
+.B{
+    background-image: linear-gradient(to right, rgb(109, 109, 109), rgb(110, 107, 107)); 
+}
+
+.bold > .B {
+    padding-left: 2.5pc;
+}
+
+.C{
+    background-image: linear-gradient(to right, rgb(109, 109, 109), rgb(110, 107, 107)); 
+  
+}

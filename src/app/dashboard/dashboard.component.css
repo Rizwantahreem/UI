@@ -1,0 +1,35 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+mat-card-title{
+  font-size: 26px;
+  font-weight: 400;
+  padding: 0.2pc;
+  padding-top: 0.3pc;
+  border-radius: 7px;
+  background-color: rgb(241, 245, 255);
+  margin-top: 0.7pc;
+}
+
+mat-card{
+  border-radius: 2pc;
+}
