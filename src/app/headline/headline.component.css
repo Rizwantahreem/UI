@@ -1,39 +1,51 @@
-*{
+* {
   margin: 1.5pc;
 }
-.mainhead{
+
+.mainhead {
   display: flex;
   justify-content: center;
 }
 
-.heading{
+.heading {
   flex: 1;
   margin: 5px;
   padding: 3px;
 }
-h2{
+h2 {
   margin-bottom: 2px;
   font-weight: bold;
 }
-p{
+p {
   margin-top: 1px;
   font-size: 16px;
 }
 
-.btns{
+.btns {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
-button{
+button {
   margin-right: 30px;
   height: 35px;
   width: 60px;
 }
 
-.wide-button{
+.wide-button {
   width: auto;
   height: 40px;
+}
+
+@media (max-width: 601px) {
+  /* .btns {
+    flex-direction: column;
+  }
+  button{
+
+  } */
+  .mainhead {
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,90 @@
+.eco-main {
+  margin: 1pc 3pc 0 3pc;
+  padding: 1pc;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.left h4 {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.eco-sub {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+  color: dimgray;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+}
+
+.right h1 {
+  margin-right: 0;
+  float: right;
+  color: dimgray;
+  font-size: x-large;
+  font-weight: 800;
+  width: 1pc;
+  border: none;
+  line-height: 1;
+  cursor: pointer;
+}
+.mat-elevation-z8 {
+  align-self: center;
+}
+
+mat-header-cell {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  padding: 1.5pc;
+}
+
+.mat-table,
+mat-header-row {
+  border: none;
+}
+
+.mat-row {
+  border-bottom: none;
+}
+
+mat-table,
+mat-header-row,
+ng-container {
+  box-shadow: none;
+}
+
+.eco-table {
+  border: 1.4px dimgray solid;
+  padding: 1pc;
+  border-radius: 20px;
+}
+
+.last {
+  padding: 1pc;
+  border-radius: 20px;
+  border: 1.5px DimGray solid;
+  margin-top: 1pc;
+}
+
+.last p {
+  color: DimGray;
+  font-size: 12px;
+  font-weight: 470;
+}
+.last h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.checks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

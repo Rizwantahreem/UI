@@ -1,0 +1,64 @@
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  right: 12px;
+  bottom: 14px;
+}
+
+.main-all {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+  margin: 1pc 1pc 1pc 1pc;
+}
+
+.grid p {
+  font-size: 19px;
+  font-weight: 400;
+  padding-top: 0.3pc;
+  border-radius: 7px;
+  line-height: 1.5;
+  background-color: rgb(241, 245, 255);
+  margin: 1pc 1pc 0 1pc;
+}
+
+.card-1 {
+  background-color: white;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  border-radius: 30px;
+}
+
+.card-2 {
+  background-color: white;
+  margin-left: 1.6pc;
+  margin-right: 1pc;
+  border-radius: 30px;
+}
+
+.card-3 {
+  background-color: white;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  border-radius: 30px;
+}
+
+@media (max-width: 1300px) {
+  .grid {
+    flex-direction: column;
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    margin-bottom: 1pc;
+  }
+  .card-2 {
+    margin-left: 1pc;
+    margin-right: 1pc;
+  }
+}

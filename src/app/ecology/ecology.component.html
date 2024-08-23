@@ -1,0 +1,75 @@
+<div class="eco-main">
+  <div class="eco-sub">
+    <div class="left">
+      <h4>Ecology</h4>
+      <p>Promotes ecological sustainability</p>
+    </div>
+    <div class="right">
+      <h1 (click)="check()" [textContent]="sign"></h1>
+      <br />
+      <p>
+        2/2 data points provided
+        <br />
+        Overall Ecology score is <span>[Red]</span>
+      </p>
+    </div>
+  </div>
+
+  <div *ngIf="!collspse">
+    <div class="eco-table">
+      <mat-table class="mat-elevation-z8" [dataSource]="dataSource">
+        <!-- Position Column -->
+        <ng-container matColumnDef="Ecology Strategy">
+          <mat-header-cell *matHeaderCellDef>
+            Ecology Strategy
+          </mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            {{ element.ecologyStrategy }}
+          </mat-cell>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="Yes, there is a strategy in place">
+          <mat-header-cell *matHeaderCellDef>
+            Yes, there is a strategy in place
+          </mat-header-cell>
+          <mat-cell *matCellDef="let element" class="checks">
+            <mat-icon *ngIf="element.yes === 'yes'">check</mat-icon>
+          </mat-cell>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="No strategy, but plan to develop one">
+          <mat-header-cell *matHeaderCellDef>
+            No strategy, but plan to develop one
+          </mat-header-cell>
+          <mat-cell *matCellDef="let element" class="checks">
+            <mat-icon *ngIf="element.noPlan === 'noPlan'">check</mat-icon>
+          </mat-cell>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="No strategy and no plan to develop one">
+          <mat-header-cell *matHeaderCellDef>
+            No strategy and no plan to develop one
+          </mat-header-cell>
+          <mat-cell *matCellDef="let element" class="checks">
+            <mat-icon *ngIf="element.no === 'no'">check</mat-icon>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+      </mat-table>
+    </div>
+
+    <div class="last">
+      <h5>
+        How Are You Increasing Green Space And Biodiversity On Or Near Homes?
+      </h5>
+      <p>We are growing more plants and trees in the vicinity.</p>
+    </div>
+  </div>
+</div>
+
+<app-resource></app-resource>

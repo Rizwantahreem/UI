@@ -1,42 +1,62 @@
-.main{
-    display: flex;
-    justify-content: space-around;
-    height: 80px;
-    /* width:auto; */
-    margin-top: 1pc;
-    font-size: 25px;
-    color: white;
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1pc;
+  font-size: 25px;
+  color: white;
+  flex-direction: row;
 }
 
-.bold{
-    font-size: 49px;
-    margin-left: 4pc;
+.bold {
+  font-size: 50px;
+  margin-left: 4pc;
 }
 
-.A,  .B, .C{
-     padding: 2pc;
-     border-top-right-radius: 30px;
-     border-top-left-radius: 30px; 
-     padding-bottom: 1pc;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+.A,
+.B,
+.C {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  padding-bottom: 1pc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8pc;
+  margin-bottom: 1pc;
 }
 
-
-.A{
-     background-image: linear-gradient(to right, rgb(255, 109, 145), LightCoral); 
+.A {
+  background-image: linear-gradient(to right, rgb(255, 109, 145), LightCoral);
 }
 
-.B{
-    background-image: linear-gradient(to right, rgb(109, 109, 109), rgb(110, 107, 107)); 
+.B {
+  background-image: linear-gradient(
+    to right,
+    rgb(109, 109, 109),
+    rgb(110, 107, 107)
+  );
 }
 
-.bold > .B {
-    padding-left: 2.5pc;
+.C {
+  background-image: linear-gradient(
+    to right,
+    rgb(109, 109, 109),
+    rgb(110, 107, 107)
+  );
 }
 
-.C{
-    background-image: linear-gradient(to right, rgb(109, 109, 109), rgb(110, 107, 107)); 
-  
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+  }
+  .A,
+  .B,
+  .C {
+    border-radius: 20px;
+    padding-bottom: 1pc;
+    margin: 1pc 1.8pc 1pc 1.8pc;
+    margin-bottom: 1pc;
+    align-items: center;
+  }
 }

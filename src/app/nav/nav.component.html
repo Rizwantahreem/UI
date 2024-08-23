@@ -7,14 +7,8 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar>ESG REPORTS</mat-toolbar>
+    <mat-toolbar>REPORTS</mat-toolbar>
     <img src="../../assets/userimage.png" alt="user image" />
-
-    <!-- <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
-    </mat-nav-list> -->
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -47,8 +41,6 @@
       </div>
     </mat-toolbar>
 
-    <app-headline></app-headline>
-    <app-midhead></app-midhead>
-    <app-dashboard></app-dashboard>
+    <app-analytic></app-analytic>
   </mat-sidenav-content>
 </mat-sidenav-container>

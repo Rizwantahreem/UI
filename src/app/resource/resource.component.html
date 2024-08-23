@@ -1,0 +1,43 @@
+<div class="resource-main">
+  <div class="res-sub">
+    <div class="left">
+      <h4>Resource Management</h4>
+      <p>Sustainable management of natural resources</p>
+    </div>
+    <div class="right">
+      <h1 (click)="collapse()" [textContent]="sign"></h1>
+      <!-- <button><i class="fas fa-sharp fa-solid fa-hyphen"></i></button> -->
+      <br />
+      <p>
+        2/2 data points provided
+        <br />
+        Overall Resource Management score is<span>[Red]</span>
+      </p>
+    </div>
+  </div>
+
+  <div *ngIf="!colapse">
+    <div class="sub">
+      <div class="first">
+        <div>
+          <h2>{{ emission }}</h2>
+          <h4>Emissions 1</h4>
+        </div>
+        <div>
+          <h2>1</h2>
+          <h4>Energy Production</h4>
+        </div>
+      </div>
+      <div class="second">
+        <div>
+          <h2>4</h2>
+          <h4>Emissions 2</h4>
+        </div>
+        <div>
+          <h2>6</h2>
+          <h4>Emissions 3</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

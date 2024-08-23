@@ -1,0 +1,26 @@
+.main-action {
+  margin: 1pc 3pc 0 3pc;
+  padding: 1pc;
+  /* text-align: center; */
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.action-text {
+  padding: 2pc;
+  border-radius: 20px;
+  border: 1.5px DimGray solid;
+  margin-bottom: 1pc;
+}
+
+p {
+  color: DimGray;
+  font-size: 14px;
+  font-weight: 470;
+}
+h5 {
+  font-weight: bolder;
+  font-size: 16px;
+}
