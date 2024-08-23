@@ -1,6 +1,7 @@
 # Dashboard
 
-Project Overview
+# Project Overview
+
 This project features a responsive dashboard designed for business applications. The dashboard includes collapsible tables to efficiently display and manage information. The layout is optimized for various screen sizes, ensuring accessibility and usability across devices.
 
 
